@@ -1,4 +1,4 @@
-package com.gabrielspassos.poc;
+package com.gabrielspassos.poc.server;
 
 import com.gabrielspassos.poc.service.UserService;
 import io.grpc.Server;
