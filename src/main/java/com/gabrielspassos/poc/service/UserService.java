@@ -15,7 +15,7 @@ import static com.mongodb.client.model.Filters.eq;
 
 public class UserService extends UserServiceGrpc.UserServiceImplBase {
 
-    private MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");
+    private MongoClient mongoClient = MongoClients.create("mongodb://root:root@localhost:27017");
     private MongoDatabase database = mongoClient.getDatabase("grpc_db");
     private MongoCollection<Document> collection = database.getCollection("users");
 
